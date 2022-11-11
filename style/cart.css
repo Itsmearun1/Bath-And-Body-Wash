@@ -1,8 +1,10 @@
 * {
     margin: 0%;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0; 
+    font-family:TradeGothicLTW01-Light;
     list-style: none;
+    color: #666666;    
+    font-size: 14px;
 }
 
 /* Navbar code */
@@ -105,16 +107,19 @@ nav{
 }
 
 #lower ul ul li {
-    width: 150px;
+    width: 250px;
     float: none;
     display: list-item;
     position: relative;
+    font-size: 13px;
+}
+#lower ul ul li:hover {
+    border-bottom: 3px solid #0087ca;
 }
 
 #lower ul ul ul li {
     position: relative;
     top: -60px;
-    letter-spacing: 150px;
 
 }
 
@@ -143,6 +148,9 @@ nav{
 }
 
 /* Footer styling */
+.container1 h5{
+    color: #0f0f0f;
+}
 .container1 {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -172,7 +180,9 @@ nav{
     line-height: 30px;
 
 }
-
+.container2 a{
+    text-decoration: none;
+}
 .searchbar2 {
     width: 80%;
     background-color: white;
@@ -209,12 +219,8 @@ nav{
     width: 58%;
 }
 
-/* .maincontainer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
 
-} */
+/* Display Main style */
 
 .main {
     
@@ -256,4 +262,15 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     padding: 20px;
     margin-top: 30px;
+}
+.maincontainer button{
+    width: 30px;
+    height: 15px;
+    background-color: #666666;
+    color: #f2f2f2;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
 }

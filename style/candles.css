@@ -108,19 +108,16 @@ nav {
 }
 
 #lower ul ul li {
-    width: 250px;
+    width: 150px;
     float: none;
     display: list-item;
     position: relative;
-    font-size: 13px;
-}
-#lower ul ul li:hover {
-    border-bottom: 3px solid #0087ca;
 }
 
 #lower ul ul ul li {
     position: relative;
     top: -60px;
+    letter-spacing: 150px;
 
 }
 
@@ -151,9 +148,6 @@ nav {
 
 /* Footer styling */
 
-.container1 h5{
-    color: #0f0f0f;
-}
 .container1 {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -183,9 +177,7 @@ nav {
     line-height: 30px;
 
 }
-.container2 a{
-    text-decoration: none;
-}
+
 .searchbar2 {
     width: 80%;
     background-color: white;
@@ -223,7 +215,6 @@ nav {
 }
 
 /* Main section style */
-
 
 .maincontainer {
     display: flex;
