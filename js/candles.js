@@ -1,5 +1,6 @@
+
 let cart = JSON.parse(localStorage.getItem("cartitems")) || [];
-let url = "https://636c8b56ad62451f9fccb3e7.mockapi.io/fragrance";
+let url = "https://636c8b56ad62451f9fccb3e7.mockapi.io/candles";
 let bag = [];
 let filter = document.querySelector("#filter");
 let sort = document.querySelector("#Sort");
@@ -81,7 +82,7 @@ function displayCard(bag) {
       else {
         let count = 0;
         for (key in cart) {
-          if (cart[key].id == element.id) {
+          if (cart[key].name === element.name) {
             count++;
             break;
           }
@@ -103,4 +104,3 @@ function displayCard(bag) {
     document.querySelector(".main").append(div);
   });
 }
-
