@@ -1,5 +1,5 @@
 let signup_form = document.querySelector("#signup");
-let LS_data = JSON.parse(localStorage.getItem("details")) || [];
+let LS_data = [];
 signup_form.addEventListener("submit", function (e) {
     e.preventDefault();
     let obj = {
