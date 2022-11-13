@@ -11,6 +11,7 @@
 nav{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
 #upper {
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +146,10 @@ nav{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
+.div1:hover,
+.div3:hover{
+    cursor: pointer;
+}
 .div1,
 .div3 {
 width: 85%;
