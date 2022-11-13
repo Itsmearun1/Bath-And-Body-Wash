@@ -1,5 +1,5 @@
 let signin_form = document.querySelector("#signinform");
-let data = JSON.parse(localStorage.getItem("details"));
+let data = JSON.parse(localStorage.getItem("details"))||[];
 let ls_data = [];
 signin_form.addEventListener("submit", function (e) {
     e.preventDefault();

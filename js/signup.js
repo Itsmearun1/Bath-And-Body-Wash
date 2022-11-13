@@ -18,7 +18,8 @@ signup_form.addEventListener("submit", function (e) {
     else {
         LS_data.push(obj);
         localStorage.setItem("details", JSON.stringify(LS_data));
-        window.location.replace("signin_up.html");
         alert("Successfully Signed Up")
+        window.location.replace("signin_up.html");
+        
     }
 })
