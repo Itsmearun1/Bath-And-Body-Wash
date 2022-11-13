@@ -1,5 +1,5 @@
 let signup_form = document.querySelector("#signup");
-let LS_data = JSON.parse(localStorage.getItem("details")) || [];
+let LS_data = [];
 signup_form.addEventListener("submit", function (e) {
     e.preventDefault();
     let obj = {
@@ -18,7 +18,8 @@ signup_form.addEventListener("submit", function (e) {
     else {
         LS_data.push(obj);
         localStorage.setItem("details", JSON.stringify(LS_data));
-        window.location.replace("signin_up.html");
         alert("Successfully Signed Up")
+        window.location.replace("signin_up.html");
+        
     }
 })
