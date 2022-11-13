@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="style/signup.css">
     <title>Document</title>
 </head>
 
@@ -22,7 +22,7 @@
                             src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwfc4c9aaa/images/svg-icons/UI-Search-v2.svg?yocs=o_s_"
                             alt=""></button>
                 </form>
-                <button id="login" onclick="location.href='signin_up.html'"><img
+                <button id="login"><img
                         src="https://drive.google.com/uc?export=view&id=1-5peaxKuqFQsEG_KSvuIoCZRhBy-UAUf "
                         alt=""></button>
                 <button id="cart"><a href="cart.html" ><img
@@ -35,11 +35,11 @@
                         <li class="hover-underline-animation"><a href="#">TOP OFFERS</a></li>
                         <li class="hover-underline-animation"> <a href="#">BODY CARE</a>
                             <ul>
-                                <li><a href="fragrance.html">BATH & SHOWER</a></li>
-                                <lI><a href="fragrance.html">MOISTURIZERS</a></lI>
-                                <li><a href="fragrance.html" >FRAGRANCE</a></li>
-                                <li><a href="fragrance.html">NEW &NOW</a></li>
-                                <li><a href="fragrance.html">EXPLORE BODY CARE</a></li>
+                                <li><a href="#">BATH & SHOWER</a></li>
+                                <LI><a href="#">MOISTURIZERS</a></LI>
+                                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                                <li><a href="#">NEW &NOW</a></li>
+                                <li><a href="#">EXPLORE BODY CARE</a></li>
                             </ul>
                         </li>
                         <li class="hover-underline-animation" > <a href="#">CANDLES</a>
@@ -89,18 +89,28 @@
 
             </div>
         </nav>
+        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6f07f823/images/banners/create-account_d.png?yocs=s_" alt="" id="upperimg">
         <div class="maincontainer">
-            <h1>Shopping Bag</h1>
-            <div class="checkout">
-                <div class="checkout1"><h2>ORDER TOTAL (USD)</h2></div>
-                <div class="checkout2"><span>$</span><span id="cart-total"></span></div>
-                <div class="checkout3" ><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" alt="" ></div>
-                <div class="checkout4"><button id="co" >CHECKOUT</button></div>
-            </div>
-            
-            <div class="main">
-            
-            </div>
+            <form action="" id="signup">
+                <label for="">First Name</label>
+                <input type="text" id="first_name">
+                <label for="">Last Name</label>
+                <input type="text" id="last_name">
+                <label for="">Email</label>
+                <input type="email" id="email">
+                <span id="emailspan"></span>
+                <label for="">Confirm Email</label>
+                <span id="emailspan2"></span>
+                <input type="email" id="email2">
+                <label for="">ZIP/Postal Code</label>
+                <input type="number" id="zip">
+                <label for="">Phone</label>
+                <input type="number" id="mob">
+                <label for="">Password</label>
+                <input type="password" id="password">
+                <input type="submit" value="CREATE ACCOUNT" >
+            </form>
+        
         </div>
         <footer>
             <div id="footer_container">
@@ -200,6 +210,9 @@
             </div>
         </footer>
     </div>
+
+    
 </body>
+
 </html>
-<script src="js/cart.js"></script>
+<script src="js/signup.js"></script>

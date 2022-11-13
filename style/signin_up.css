@@ -1,17 +1,16 @@
 * {
     margin: 0%;
-    padding: 0;
-    font-family: TradeGothicLTW01-Light;
+    padding: 0; 
+    font-family:TradeGothicLTW01-Light;
     list-style: none;
-    color: #666666;
+    color: #666666;    
     font-size: 14px;
 }
 
 /* Navbar code */
-nav {
+nav{
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
-
 #upper {
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +55,9 @@ nav {
 #cart>a>img {
     height: 100%;
 }
-
-#upper>a {
+#upper>a{
     margin-right: 20%;
 }
-
 #login,
 #cart {
     border: 0;
@@ -116,7 +113,6 @@ nav {
     position: relative;
     font-size: 13px;
 }
-
 #lower ul ul li:hover {
     border-bottom: 3px solid #0087ca;
 }
@@ -152,10 +148,9 @@ nav {
 }
 
 /* Footer styling */
-.container1 h5 {
+.container1 h5{
     color: #0f0f0f;
 }
-
 .container1 {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -185,11 +180,9 @@ nav {
     line-height: 30px;
 
 }
-
-.container2 a {
+.container2 a{
     text-decoration: none;
 }
-
 .searchbar2 {
     width: 80%;
     background-color: white;
@@ -229,103 +222,61 @@ nav {
 
 /* Display Main style */
 
-.main {
-
-    width: 85%;
-    min-height: 400px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
+#upperimg{
+    width: 65%;
+    height: 100px;
+    display: block;
     margin: auto;
-    margin-top: 20px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    margin-bottom: 50px;
-
-}
-
-.checkout {
-    width: 40%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    padding: 50px;
-    gap: 10px;
-
-}
-.checkout div{
-    height: 30px;
-    text-align: center;
-}
-.checkout img{
-    height: 100%;
-}
-.checkout h2{
-    font-size: larger;
-    color: #0f0f0f;
-}
-.checkout span{
-    font-size: x-large;
-    color: #0f0f0f;
-}
-#co{
-    background-color: green;
-    width: 80%;
-    height: 100%;
-    margin: 0%;
-    padding: 20px;
-}
-#co:hover{
-    cursor: pointer;
-}
-.main>div {
-    padding: 10px;
-    text-align: center;
-    line-height: 25px;
-}
-.main>div>h5{
-    display: inline-block;
-}
-.main>div img {
-    width: 50%;
-}
-
-.main>div>p:nth-of-type(1) {
-    font-size: small;
-    color: #666666;
-}
-
-.main>div>p:nth-of-type(2) {
-    color: red;
-    font-size: small;
-    font-style: italic;
-}
-
-.price {
-    width: 30%;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    padding: 20px;
     margin-top: 30px;
 }
 
-.maincontainer button {
-    width: 30px;
-    height: 15px;
-    background-color: #666666;
+.maincontainer{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 60px;
+    margin-top: 20px;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.maincontainer>div{
+    width: 48%;
+    text-align: center;
+
+}
+.maincontainer>div img{
+    width: 85%;
+}
+#signin>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+#signin>form input{
+    width: 60%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#signin>form input:nth-of-type(3){
+    width: 30%;
+    height: 30px;
+    background-color: #2e2c2c;
     color: #f2f2f2;
     border: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
 }
-.maincontainer h1{
-    margin: 30px;
-    color: #0f0f0f;
-    text-align: center;
-    font-size: xx-large;
-
+#signup button{
+    height: 35px;
+    padding: 15px;
+    background-color: #2e2c2c;
+    color: #f2f2f2;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#signin>form input:nth-of-type(3):hover,button:hover{
+    cursor: pointer;
 }

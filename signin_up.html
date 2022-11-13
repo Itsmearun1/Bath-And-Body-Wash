@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="style/signin_up.css">
     <title>Document</title>
 </head>
 
@@ -22,10 +22,10 @@
                             src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwfc4c9aaa/images/svg-icons/UI-Search-v2.svg?yocs=o_s_"
                             alt=""></button>
                 </form>
-                <button id="login" onclick="location.href='signin_up.html'"><img
+                <button id="login"><img
                         src="https://drive.google.com/uc?export=view&id=1-5peaxKuqFQsEG_KSvuIoCZRhBy-UAUf "
                         alt=""></button>
-                <button id="cart"><a href="cart.html" ><img
+                <button id="cart"><a href="cart.html"><img
                     src="https://drive.google.com/uc?export=view&id=1P4pQl77-yWbLRGr6ZYtMxkk-yy-u6KJ6   "
                     alt=""></a></button>
             </div>
@@ -35,11 +35,11 @@
                         <li class="hover-underline-animation"><a href="#">TOP OFFERS</a></li>
                         <li class="hover-underline-animation"> <a href="#">BODY CARE</a>
                             <ul>
-                                <li><a href="fragrance.html">BATH & SHOWER</a></li>
-                                <lI><a href="fragrance.html">MOISTURIZERS</a></lI>
-                                <li><a href="fragrance.html" >FRAGRANCE</a></li>
-                                <li><a href="fragrance.html">NEW &NOW</a></li>
-                                <li><a href="fragrance.html">EXPLORE BODY CARE</a></li>
+                                <li><a href="#">BATH & SHOWER</a></li>
+                                <LI><a href="#">MOISTURIZERS</a></LI>
+                                <li><a href="fragrance.html">FRAGRANCE</a></li>
+                                <li><a href="#">NEW &NOW</a></li>
+                                <li><a href="#">EXPLORE BODY CARE</a></li>
                             </ul>
                         </li>
                         <li class="hover-underline-animation" > <a href="#">CANDLES</a>
@@ -89,17 +89,27 @@
 
             </div>
         </nav>
+        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_" alt="" id="upperimg">
         <div class="maincontainer">
-            <h1>Shopping Bag</h1>
-            <div class="checkout">
-                <div class="checkout1"><h2>ORDER TOTAL (USD)</h2></div>
-                <div class="checkout2"><span>$</span><span id="cart-total"></span></div>
-                <div class="checkout3" ><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png" alt="" ></div>
-                <div class="checkout4"><button id="co" >CHECKOUT</button></div>
+            <div id="signin">
+                <h1>SIGN IN</h1>
+                <p>If you already have an account with us, sign in below</p>
+                <form id="signinform">
+                    <label for="">Email Address</label>
+                    <input type="email" id="email">
+                    <label for="">Password</label>
+                    <input type="password" id="password">
+                    <input type="submit" value="SIGN IN" />
+                </form>
             </div>
-            
-            <div class="main">
-            
+            <div id="signup">
+                <h2>SIGN UP</h2>
+                <p>Create an account to access the best of your favorite store</p>
+                <form id="signupform">
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f47b7b9/images/loyalty/boc-launch-prospects_lacb_0.jpg?yocs=s_"
+                        alt="">                   
+                </form>
+                <button onclick="location.href='signup.html'">CREATE AN ACCOUNT</button>
             </div>
         </div>
         <footer>
@@ -200,6 +210,9 @@
             </div>
         </footer>
     </div>
+
+    
 </body>
+
 </html>
-<script src="js/cart.js"></script>
+<script src="js/signin_up.js"></script>

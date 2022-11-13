@@ -9,7 +9,8 @@ let sbutton=document.querySelector("#searchimg");
 
 //Search function
 
-sbutton.addEventListener("click",()=>{
+sbutton.addEventListener("click",(e)=>{
+  e.preventDefault()
   let x=search.value;
   console.log(x);
   let sdata = bag.filter(ele => {

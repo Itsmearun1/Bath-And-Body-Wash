@@ -1,6 +1,7 @@
 let cart = JSON.parse(localStorage.getItem("cartitems")) || [];
 let url = "https://636c8b56ad62451f9fccb3e7.mockapi.io/fragrance";
 let bag = [];
+let bag2=[];
 let filter = document.querySelector("#filter");
 let sort = document.querySelector("#Sort");
 let search=document.querySelector("#searchip");
@@ -8,9 +9,10 @@ let sbutton=document.querySelector("#searchimg");
 
 //Search function
 
-sbutton.addEventListener("click",()=>{
+sbutton.addEventListener("click",(e)=>{
+  e.preventDefault()
   let x=search.value;
-  console.log(x);
+  // console.log(x);
   let sdata = bag.filter(ele => {
     return ele.name.toLowerCase().includes(x.toLowerCase());
   })
@@ -21,10 +23,16 @@ sbutton.addEventListener("click",()=>{
 
 filter.addEventListener("change", () => {
   let selected = filter.value;
-  let newdata = bag.filter(element => {
-    return element.type.includes(selected);
-  })
-  displayCard(newdata);
+  console.log(selected);
+  if(selected==" All " ){
+    displayCard(bag2);
+  }
+  else{
+    let newdata = bag.filter(element => {
+      return element.type.includes(selected);
+    })
+    displayCard(newdata);
+  }
 });
 
 // Sort Function
@@ -50,6 +58,7 @@ fetch(url)
   .then((res) => res.json())
   .then((data) => {
     bag = data;
+    bag2 = data;
     displayCard(bag);
   });
 
