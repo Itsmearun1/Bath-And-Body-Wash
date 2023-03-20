@@ -1,1 +1,19 @@
-# chemical-loss-1768
+Bath & Body Works Official Site Clone
+This is a clone of the official Bath & Body Works website. It is created using HTML, CSS, and JavaScript.
+
+Features
+This clone includes the following features:
+
+Homepage with featured products and banners
+Navigation menu with dropdowns for categories and subcategories
+Product listing pages with filters and sorting options
+Product detail pages with additional information
+Cart functionality with ability to add and remove items
+Checkout process with shipping and payment options
+Account creation and login functionality
+
+Technologies Used
+HTML
+CSS
+JavaScript
+Contributing
