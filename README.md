@@ -17,3 +17,4 @@ HTML
 CSS
 JavaScript
 Contributing
+![proj1](https://github.com/Itsmearun1/chemical-loss-1768/assets/112754597/04779d0c-3223-4449-82d0-241bbf526a94)
